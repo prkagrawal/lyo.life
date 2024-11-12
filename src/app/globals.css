@@ -19,3 +19,127 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.image-converter-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+input[type="number"],
+input[type="file"] {
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+
+/* General styling for the dropdown */
+select {
+  background-color: #fff;  /* White background for dropdown */
+  color: #333;  /* Dark text color */
+  font-size: 16px;  /* Font size */
+  padding: 8px 12px;  /* Padding inside the dropdown */
+  border: 1px solid #ccc;  /* Light border for dropdown */
+  border-radius: 4px;  /* Rounded corners */
+  width: 200px;  /* Set the width */
+  cursor: pointer;  /* Pointer cursor on hover */
+  transition: all 0.3s ease;  /* Smooth transition for interactions */
+}
+
+/* Change text color when option is selected */
+select:focus {
+  outline: none;  /* Remove default focus outline */
+  border-color: #0070f3;  /* Blue border on focus */
+}
+
+/* Styling for the options inside the dropdown */
+option {
+  background-color: #fff;  /* White background for each option */
+  color: #333;  /* Dark text color */
+  padding: 8px;  /* Padding for options */
+  cursor: pointer;  /* Pointer cursor when hovering over options */
+  transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+/* On hover, change background of the option */
+option:hover {
+  background-color: #f0f0f0;  /* Light gray background when hovered */
+  color: #0070f3;  /* Change text color to blue on hover */
+}
+
+/* Optional: Improve the styling of the dropdown container */
+label {
+  font-size: 14px;
+  color: #939292;  /* Dark color for labels */
+  margin-bottom: 8px;  /* Space below the label */
+  display: block;
+  font-weight: bold;  /* Make the label text bold */
+}
+
+select:focus {
+  border-color: #0070f3;  /* Blue border when the dropdown is focused */
+}
+
+.pdf-tool-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+input[type="file"], input[type="text"] {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
