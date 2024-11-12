@@ -359,7 +359,7 @@ const ImageCropper = () => {
   const [croppedImages, setCroppedImages] = useState<{ img: string; index: number }[]>([]);
   const [scaleX, setScaleX] = useState(1);
   const [scaleY, setScaleY] = useState(1);
-  const [rotateAngle, setRotateAngle] = useState(0);
+  // const [rotateAngle, setRotateAngle] = useState(0);
   const cropperRef = React.useRef<ReactCropperElement>(null);
   const [fileExtension, setFileExtension] = useState<string>("");
 
@@ -390,7 +390,7 @@ const ImageCropper = () => {
   const rotateImage = () => {
     const cropper = cropperRef.current?.cropper;
     if (cropper) {
-      setRotateAngle((prev) => prev + 45); // Rotate by 45 degrees
+      // setRotateAngle((prev) => prev + 45); // Rotate by 45 degrees
       cropper.rotate(45);
     }
   };
@@ -399,7 +399,7 @@ const ImageCropper = () => {
     const cropper = cropperRef.current?.cropper;
     if (cropper) {
       cropper.rotateTo(0);
-      setRotateAngle(0);
+      // setRotateAngle(0);
     }
   };
 
